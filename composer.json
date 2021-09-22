@@ -1,6 +1,6 @@
 {
-  "name": "nwidart/laravel-modules",
-  "description": "Laravel Module management",
+  "name": "gohiljayvirsinh/laravel-modules",
+  "description": "Laravel SPA Module management",
   "keywords": [
     "modules",
     "laravel",
@@ -14,6 +14,11 @@
       "name": "Nicolas Widart",
       "email": "n.widart@gmail.com",
       "homepage": "https://nicolaswidart.com",
+      "role": "Developer"
+    },
+    {
+      "name": "Jayvirsinh Gohil",
+      "email": "gohiljayvirsinh02@gmail.com",
       "role": "Developer"
     }
   ],
