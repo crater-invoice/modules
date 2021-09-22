@@ -37,8 +37,11 @@ return [
             'composer' => 'composer.json',
             'assets/js/app' => 'Resources/assets/js/app.js',
             'assets/sass/app' => 'Resources/assets/sass/app.scss',
-            'webpack' => 'webpack.mix.js',
+            'module' => 'module.js',
             'package' => 'package.json',
+            'postcss.config' => 'postcss.config.js',
+            'tailwind.config' => 'tailwind.config.js',
+            'vite.config' => 'tailwind.config.js',
         ],
         'replacements' => [
             'routes/web' => ['LOWER_NAME', 'STUDLY_NAME'],

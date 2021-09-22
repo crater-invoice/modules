@@ -1,0 +1,16 @@
+// vite.config.js
+const path = require('path')
+const { defineConfig } = require('vite')
+import vue from '@vitejs/plugin-vue'
+
+module.exports = defineConfig({
+  build: {
+    lib: {
+      entry: path.resolve(__dirname, '/module.js'),
+      name: 'MyLib',
+      fileName: (format) => `sample-module.${format}.js`
+    },
+    outDir: '../../public'
+  },
+  plugins: [vue()]
+})
