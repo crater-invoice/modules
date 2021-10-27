@@ -1,27 +1,14 @@
 {
-  "name": "gohiljayvirsinh/laravel-modules",
-  "description": "Laravel SPA Module management",
+  "name": "bytefury/modules",
+  "description": "Crater Module Management Package",
   "keywords": [
     "modules",
     "laravel",
-    "nwidart",
     "module",
-    "rad"
+    "rad",
+    "crater"
   ],
   "license": "MIT",
-  "authors": [
-    {
-      "name": "Nicolas Widart",
-      "email": "n.widart@gmail.com",
-      "homepage": "https://nicolaswidart.com",
-      "role": "Developer"
-    },
-    {
-      "name": "Jayvirsinh Gohil",
-      "email": "gohiljayvirsinh02@gmail.com",
-      "role": "Developer"
-    }
-  ],
   "require": {
     "php": ">=7.3",
     "ext-json": "*"
