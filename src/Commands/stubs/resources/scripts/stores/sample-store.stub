@@ -1,0 +1,8 @@
+const { defineStore } = window.pinia
+
+export const useSampleStore = defineStore({
+  id: '$LOWER_NAME$-sample-store',
+  state: () => ({
+    sample: 'sample',
+  }),
+})

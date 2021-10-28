@@ -2,15 +2,27 @@
 const path = require('path')
 const { defineConfig } = require('vite')
 import vue from '@vitejs/plugin-vue'
+import { viteExternalsPlugin } from 'vite-plugin-externals'
 
 module.exports = defineConfig({
   build: {
     lib: {
-      entry: path.resolve(__dirname, '/module.js'),
+      entry: path.resolve(__dirname, 'Resources/scripts/module.js'),
       name: 'MyLib',
-      fileName: (format) => `sample-module.${format}.js`
+      fileName: (format) => `$LOWER_NAME$.${format}.js`,
     },
-    outDir: '../../public'
+    outDir: './dist',
   },
-  plugins: [vue()]
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, '../../resources'),
+      '~': path.resolve(__dirname, 'Resources'),
+    },
+  },
+  plugins: [
+    vue(),
+    viteExternalsPlugin({
+      vue: 'Vue',
+    }),
+  ],
 })
