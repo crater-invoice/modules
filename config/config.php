@@ -45,6 +45,7 @@ return [
             'postcss.config' => 'postcss.config.js',
             'tailwind.config' => 'tailwind.config.js',
             'vite.config' => 'vite.config.js',
+            'gitignore' => '.gitignore',
         ],
         'replacements' => [
             'routes/web' => ['LOWER_NAME', 'STUDLY_NAME'],
